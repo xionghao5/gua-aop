@@ -1,2 +1,2 @@
 # gua-aop
-a demo of aop
+注解切面记录日志
