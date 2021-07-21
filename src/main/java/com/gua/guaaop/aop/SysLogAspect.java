@@ -43,7 +43,7 @@ public class SysLogAspect {
     }
 
     private void requestParams(JoinPoint joinPoint) {
-        String className = joinPoint.getClass().getName();
+        String className = joinPoint.getTarget().getClass().getName();
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         //获取切入点所在的方法
         Method method = signature.getMethod();
